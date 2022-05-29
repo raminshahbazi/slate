@@ -12,6 +12,7 @@ toc_footers:
 
 includes:
   - errors
+  - introduction
 
 search: true
 
@@ -219,3 +220,9 @@ Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to delete
 
+
+
+
+<h1 id="quickstart">راهنمای شروع به کار با API</h1>
+
+خالی
