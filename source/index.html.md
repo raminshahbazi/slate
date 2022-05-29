@@ -14,6 +14,7 @@ includes:
   - errors
   - markets
   - trade
+  - user
 
 search: true
 
