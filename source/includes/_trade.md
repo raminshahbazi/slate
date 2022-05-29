@@ -51,45 +51,6 @@ post
   پارامترهای ورودی:
 
 
-پارامتر
-نوع 
-پیشفرض
-توضیحات
-نمونه
-symbol
-string
-الزامی
-بازار
-
-
-amount
-string,int
-الزامی
-مقدار سفارش
-
-
-price
-string,int
-الزامی
-قیمت سفارش
-
-
-side
-string(buy,sell)
-buy
-نوع سفارش
-
-
-fill_type
-string(limit,market)
-limit
-نحوه اجرای سفارش
-
-
-market
-string(spot,margin, loan)
-spot
-
 
 
 پارامتر     | نوع    | پیش‌فرض   |   توضیحات     | نمونه
