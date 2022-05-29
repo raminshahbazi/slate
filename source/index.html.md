@@ -12,7 +12,7 @@ toc_footers:
 
 includes:
   - errors
-  - introduction
+  - markets
 
 search: true
 
