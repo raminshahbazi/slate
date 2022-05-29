@@ -1,11 +1,10 @@
 ---
 title: API Reference
+lang: fa
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
-  - javascript
+  - plane
+
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -23,52 +22,29 @@ meta:
     content: Documentation for the Kittn API
 ---
 
-# Introduction
+# مستندات API راستین
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+سلام. مفتخریم که در صرافی راستین‌‌، خدمات با کیفیت را با کمترین کارمزد در اختیار شما مشتریان محترم قرار دهیم. با توجه به اهمیت استفاده از سرویس API برای انجام معاملات خودکار این سند تهیه شده است.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+# احراز هویت و توکن
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+> جهت احراز هویت از این HTTP Header استفاده کنید:
 
-# Authentication
-
-> To authorize, use this code:
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+```plane
+Authorization: Token yourTOKENhereHEX0000000000
 ```
 
-```python
-import kittn
 
-api = kittn.authorize('meowmeowmeow')
-```
+> بخاطر داشته باشید که `yourTOKENhereHEX0000000000` را با توکن خود جایگذاری کنید.
 
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here" \
-  -H "Authorization: meowmeowmeow"
-```
 
-```javascript
-const kittn = require('kittn');
+API ها در راستین به دو دسته تقسیم می‌شوند. دسته نخست  API های عمومی است که نیازی به احراز هویت و ارسال توکن نیست. برای دسترسی به API های خصوصی لازم است  توکن به عنوان HTTP Header درخواست به صورت زیر ارسال شود:
 
-let api = kittn.authorize('meowmeowmeow');
-```
 
-> Make sure to replace `meowmeowmeow` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
-
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
-
-`Authorization: meowmeowmeow`
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+برای دریافت توکن می‌توانید با مراجعه به پنل کاربری خود در راستین  از بخش پروفایل وارد صفحه تنظیمات شده و توکن خود را دریافت نمایید.
 </aside>
 
 # Kittens
