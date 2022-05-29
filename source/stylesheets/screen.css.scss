@@ -2,7 +2,7 @@
 @import 'normalize';
 @import 'variables';
 @import 'icon-font';
-// @import 'rtl'; // uncomment to switch to RTL format
+@import 'rtl'; // uncomment to switch to RTL format
 
 /*
 Copyright 2008-2013 Concur Technologies, Inc.
@@ -76,6 +76,7 @@ html, body {
     display: block;
     max-width: 100%;
     margin-bottom: $logo-margin;
+    margin-top:20px;
   }
 
   &>.search {
@@ -341,7 +342,7 @@ html, body {
   }
 
   // the div is the tocify hidden div for placeholding stuff
-  &>h1, &>h2, &>div {
+  &>h1, &>h2, &>h2+div {
     clear:both;
   }
 
@@ -399,7 +400,7 @@ html, body {
 
   table {
     margin-bottom: 1em;
-    overflow: auto;
+    overflow: visible;
     th,td {
       text-align: left;
       vertical-align: top;
