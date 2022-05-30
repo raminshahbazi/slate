@@ -82,6 +82,50 @@ GET https://api.raastin.com/api/v1/market/symbols/symbol/ HTTP/1.1
 
 برای دریافت لیست سفارش‌های هر بازار از این API استفاده کنید.
 
+- آدرس : `https://api.raastin.com/api/v1/market/depth/symbol`
+- متد : `GET`
+- نوع :‌ عمومی
+
+پارامتر:
+
+نماد بازار مورد نظر را باید به جای کلمه symbol وارد کنید.
+
+
+```plane
+
+ GET https://api.raastin.com/api/v1/market/depth/symbol HTTP/1.1
+
+```
+
+
+> درصورت فراخوانی صحیح پاسخ به این صورت خواهد بود:
+
+```plane
+
+{
+    "last_trade": {اخرین معامله
+        "amount": "0.00049",حجم سفارش
+        "price": "1104354177",قیمت سفارش
+        "total": "541133" ارزش سفارش
+    },
+    "bids": [اردر های خرید
+                {
+            "price": "100000",
+            "amount": "10.00000",
+            "depth": "2",
+            "total": "1000000"
+        }
+    ],
+    "asks": [اردرهای فروش
+        {
+            "price": "1112952204",
+            "amount": "0.01517",
+            "depth": "33",
+            "total": "16883484"
+        },
+}
+
+```
 
 
 ## لیست معاملات
