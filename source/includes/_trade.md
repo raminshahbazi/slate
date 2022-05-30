@@ -69,8 +69,8 @@ market | string(spot, margin, loan) | spot | - | -
 
 ```plane
 
-/api/v1/market/orders/
-headers = {'Authorization': 'Token 9054f7aa9305e012b3c2300408c3dfdf390fcddf'}
+GET https://api.raastin.com/api/v1/market/orders/ HTTP/1.1
+Authorization: Token yourTOKENhereHEX0000000000
 
 ```
 
@@ -104,24 +104,17 @@ headers = {'Authorization': 'Token 9054f7aa9305e012b3c2300408c3dfdf390fcddf'}
 
  برای دریافت لیست همه  سفارش ها میتوانید از این api استفاده کنید.
 
-
-
-
 ارسال توکن دریافتی در header برای استفاده از این api ضروری است.
 
-متد:
-Get
-نوع:
-
-خصوصی
-محدودیت فراخوانی:
-
+- آدرس : `https://api.raastin.com/api/v1/market/orders/`
+- متد : `GET`
+- نوع :‌ خصوصی
 
 
 همچنین در این api امکان فیلتر کردن بر اساس وضعیت سفارش و بازار وجود دارد.
 
 آدرس:
-/api/v1/market/orders/?symbol=&status=
+`https://api.raastin.com/api/v1/market/orders/?symbol=&status=`
 
 مقادیر مجاز برای symbol همان بازارهای راستین است و مقادیر مجاز برای status , 
 Canceled,new,filled 
@@ -129,7 +122,7 @@ Canceled,new,filled
 
 برای دریافت اطلاعات مربوط به یک سفارش کافیست در انتهای ادرس api مربوط به لیست سفارشات id سفارش مورد نظر را قرار دهید.
 
-/api/v1/market/orders/1
+`https://api.raastin.com/api/v1/market/orders/1`
 
 
 ## لغو سفارش
