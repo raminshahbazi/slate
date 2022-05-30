@@ -7,7 +7,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
 
 
 toc_footers:
-  - <a href='#'>ساخت api token </a>
+  - <a href='https://raastin.com/account/api-management'>ساخت api token </a>
   - <a href='https://raastin.com'>راستین</a>
 
 includes:
@@ -46,7 +46,7 @@ API ها در راستین به دو دسته تقسیم می‌شوند. دست
 
 
 <aside class="notice">
-برای دریافت توکن می‌توانید با مراجعه به پنل کاربری خود در راستین  از بخش پروفایل وارد صفحه تنظیمات شده و توکن خود را دریافت نمایید.
+برای دریافت توکن می‌توانید با مراجعه به پنل کاربری خود در راستین  از بخش حساب کاربری وارد صفحه <a href="https://raastin.com/account/api-management">مدیریت apiها</a> شده  و توکن خود را دریافت نمایید.
 </aside>
 
 
