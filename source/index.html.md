@@ -7,21 +7,21 @@ language_tabs: # must be one of https://git.io/vQNgJ
 
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
+  - <a href='#'>ساخت api token </a>
+  - <a href='https://raastin.com'>راستین</a>
 
 includes:
   - markets
   - trade
   - user
 
-search: true
+search: false
 
 code_clipboard: true
 
 meta:
-  - name: description
-    content: Documentation for the Kittn API
+  - name: مستندات صرافی راستین
+    content: مستندات صرافی راستین
 ---
 
 # مستندات API راستین
