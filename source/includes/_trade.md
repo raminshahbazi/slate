@@ -130,9 +130,9 @@ Canceled,new,filled
 
 
 ```plane
-
-/api/v1/market/orders/cancel/
-headers = {'Authorization': 'Token 9054f7aa9305e012b3c2300408c3dfdf390fcddf'}
+POST https://api.raastin.com/api/v1/market/orders/cancel/ HTTP/1.1
+Authorization: Token yourTOKENhereHEX0000000000
+id: 1054
 
 ```
 
@@ -140,11 +140,6 @@ headers = {'Authorization': 'Token 9054f7aa9305e012b3c2300408c3dfdf390fcddf'}
 > درصورت فراخوانی صحیح پاسخ به این صورت خواهد بود:
 
 ```plane
-
-HTTP 201 Created
-Allow: POST, OPTIONS
-Content-Type: application/json
-Vary: Accept
 
 {
     "id": "620597",
@@ -156,12 +151,10 @@ Vary: Accept
 برای لغو یک سفارش میتوانید از  api استفاده کنید.
 
 
-متد:
-POST
-نوع:
+- آدرس : `https://api.raastin.com/api/v1/market/orders/cancel/`
+- متد : `POST`
+- نوع :‌ خصوصی
 
-خصوصی
-محدودیت فراخوانی:
 
 
 
@@ -171,5 +164,3 @@ POST
 پارامتر     | نوع    | پیش‌فرض   |   توضیحات     | نمونه
 ----------- | ----   | ------   |   ---------   | -----
 id | int | الزامی | شناسه سفارش| 1054
-
-محدودیت فراخوانی : 
