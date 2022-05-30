@@ -80,15 +80,6 @@ GET https://api.raastin.com/api/v1/market/symbols/symbol/ HTTP/1.1
 
 ## لیست سفارش‌ها:اردر بوک
 
-برای دریافت لیست سفارش‌های هر بازار از این API استفاده کنید.
-
-- آدرس : `https://api.raastin.com/api/v1/market/depth/symbol`
-- متد : `GET`
-- نوع :‌ عمومی
-
-پارامتر:
-
-نماد بازار مورد نظر را باید به جای کلمه symbol وارد کنید.
 
 
 ```plane
@@ -126,6 +117,17 @@ GET https://api.raastin.com/api/v1/market/symbols/symbol/ HTTP/1.1
 }
 
 ```
+
+برای دریافت لیست سفارش‌های هر بازار از این API استفاده کنید.
+
+- آدرس : `https://api.raastin.com/api/v1/market/depth/symbol`
+- متد : `GET`
+- نوع :‌ عمومی
+
+پارامتر:
+
+نماد بازار مورد نظر را باید به جای کلمه symbol وارد کنید.
+
 
 
 ## لیست معاملات
