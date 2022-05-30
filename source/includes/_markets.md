@@ -3,16 +3,18 @@
 
 
 ```plane
-/api/v1/market/symbols/
+
+GET https://api.raastin.com/api/v1/market/symbols/ HTTP/1.1
 
 ```
+
 
 
 > درصورت فراخوانی صحیح پاسخ به این صورت خواهد بود:
 
 ```plane
-
-"name": "BTCUSDT",نام بازار
+{
+    "name": "BTCUSDT",نام بازار
         "asset": "BTC",ارز معامله شده
         "base_asset": "USDT",ارز پایه
         "taker_fee": "0.002", کارمزد معامله ای که بر اساس ثبت سفارش جدید روی تابلوی معاملات انجام شود
@@ -22,12 +24,35 @@
         "min_trade_quantity": "0.00001",مقدار کمینه مجاز برای معامله
         "max_trade_quantity": "9000",مقدار بیشینه ماز برای معامله
         "enable": false فعال بودن بازار
+}
 
-با قرار دادن نام بازار مورد نظر در آدرس زیر می توانید اطلاعات مربوط به تغییرات قیمت و حجم معاملات مربوط  به آن بازار را دریافت کنید.
+```
 
- /api/v1/market/symbols/symbol
+ برای دریافت اطلاعات مربوط به همه ی بازارهای راستین از این API استفاده کنید.
 
-در صورت فراخوانی صحیح پاسخ به این صورت خواهد بود:
+- آدرس : `https://api.raastin.com/api/v1/market/symbols`
+- متد : `GET`
+- نوع :‌ عمومی
+
+
+در این api امکان فیلتر کردن بازار بر اساس name و asset symbol    و base_asset فراهم شده است. برای این منظور کافی است تا پارامترهای ذکر شده به عنوان کوئری پارام در url ارسال شود.
+
+نمونه:
+
+`http://api.raastin.com/api/v1/market/symbols/?base_asset=USDT&asset=BTC`
+
+
+## اطلاعات یک بازار خاص
+
+```plane
+
+GET https://api.raastin.com/api/v1/market/symbols/symbol/ HTTP/1.1
+
+```
+
+ > درصورت فراخوانی صحیح پاسخ به این صورت خواهد بود:
+
+ ```
 
 {
     "name": "USDTIRT",
@@ -43,23 +68,13 @@
     "base_volume": null
 }
 
+ ```
 
+ با قرار دادن نام بازار مورد نظر در آدرس زیر می توانید اطلاعات مربوط به تغییرات قیمت و حجم معاملات مربوط  به آن بازار را دریافت کنید.
 
-```
-
- برای دریافت اطلاعات مربوط به همه ی بازارهای راستین از این API استفاده کنید.
-
-متد:
-Get
-نوع: عمومی
-
-محدودیت فراخوانی:
-
-
-در این api امکان فیلتر کردن بازار بر اساس name و asset symbol    و base_asset فراهم شده است. برای این منظور کافی است تا پارامترهای ذکر شده به عنوان کوئری پارام در url ارسال شود.
-
-نمونه:
-http://127.0.0.1:8000/api/v1/market/symbols/?base_asset=USDT&asset=BTC
+- آدرس : `https://api.raastin.com/api/v1/market/symbols/symbol`
+- متد : `GET`
+- نوع :‌ عمومی
 
 
 
@@ -67,12 +82,15 @@ http://127.0.0.1:8000/api/v1/market/symbols/?base_asset=USDT&asset=BTC
 
 برای دریافت لیست سفارش‌های هر بازار از این API استفاده کنید.
 
+
+
 ## لیست معاملات
 
 
 
 ```plane
- /api/v1/market/trades/?symbol=SYMBOL
+
+ GET https://api.raastin.com/api/v1/market/trades/?symbol=SYMBOL HTTP/1.1
 
 ```
 
@@ -104,20 +122,14 @@ http://127.0.0.1:8000/api/v1/market/symbols/?base_asset=USDT&asset=BTC
             "pair_amount": "723637",
             "is_buyer_maker": false
         },
-
+}
 
 ```
 
 برای دریافت لیست معاملات هر بازار  از این API استفاده کنید.
 
-آدرس:
-
-
-متد:
-Get
-نوع:
-
-عمومی
+- آدرس : `https://api.raastin.com/api/v1/market/trades/?symbol=SYMBOL`
+- متد : `GET`
+- نوع :‌ عمومی
 
 پارامترها:
-محدودیت فراخوانی:
